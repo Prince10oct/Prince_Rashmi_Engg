@@ -61,7 +61,7 @@
     .logo {
       position: absolute;
       top: 20px;
-      right: 600px;
+      mid: 00px;
       width: 70px;
       transform-style: preserve-3d;
       animation: spinLogo 12s infinite linear, pulseLogo 2.5s infinite ease-in-out;
@@ -74,21 +74,6 @@
       50% { transform: rotateY(180deg) rotateX(-10deg); }
       75% { transform: rotateY(270deg) rotateX(5deg); }
       100% { transform: rotateY(360deg) rotateX(0deg); }
-    }
-
-   /* Badge */
-    .badge {
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      padding: 10px 20px;
-      background: linear-gradient(45deg, #d4af37, #f5d76e);
-      color: black;
-      font-weight: bold;
-      border-radius: 12px;
-      font-size: 18px;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-      animation: floatBadge 3s infinite ease-in-out alternate;
     }
     @keyframes floatBadge {
       0% { transform: perspective(600px) rotateY(-10deg) translateY(0px); }
