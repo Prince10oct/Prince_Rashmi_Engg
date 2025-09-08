@@ -61,12 +61,13 @@
     .logo {
       position: absolute;
       top: 20px;
-      mid: 00px;
       width: 70px;
       transform-style: preserve-3d;
       animation: spinLogo 12s infinite linear, pulseLogo 2.5s infinite ease-in-out;
       box-shadow: 0 0 15px rgba(255, 0, 50, 0.6), 0 0 25px rgba(255, 0, 50, 0.4);
       border-radius: 50%;
+      z-index: 2;
+      position: relative;
     }
     @keyframes spinLogo {
       0% { transform: rotateY(0deg) rotateX(0deg); }
