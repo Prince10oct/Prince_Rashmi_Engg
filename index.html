@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prince 💍 Rashmi — Engagement | 30 Oct 2025</title>
-  <meta name="description" content="You're invited to celebrate the engagement of Prince & Rashmi on 30th October 2025 at Hotel Blue Sivalik, Ranchi. RSVP and save the date!" />
+  <meta name="description" content="You're invited to celebrate the engagement of Prince & Rashmi on 30th October 2025 at Hotel Blue Sivalik, Ranchi and save the date!" />
 
   <!-- Fonts: Elegant pairings -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -85,23 +85,6 @@
     .detail{background:#fff; border:1px solid rgba(201,162,39,.2); border-radius:16px; padding:20px; box-shadow: var(--shadow)}
     .detail h4{margin:0 0 6px; font-family:'Lora', serif}
 
-    /* Gallery */
-    .gallery{display:grid; grid-template-columns: repeat(12, 1fr); gap:10px}
-    .gallery img{width:100%; height:100%; object-fit:cover; border-radius:14px; border:1px solid rgba(201,162,39,.18)}
-    .g1{grid-column: span 7}
-    .g2{grid-column: span 5}
-    .g3{grid-column: span 4}
-    .g4{grid-column: span 4}
-    .g5{grid-column: span 4}
-    @media (max-width:900px){.g1,.g2,.g3,.g4,.g5{grid-column: span 12}}
-
-    /* RSVP */
-    form{display:grid; gap:14px}
-    .field{display:grid; gap:6px}
-    label{font-weight:600; font-size:14px; letter-spacing:.3px}
-    input, textarea, select{padding:12px 14px; border-radius:12px; border:1px solid rgba(201,162,39,.25); background:#fff; font: inherit}
-    textarea{min-height:110px}
-
     .note{font-size:13px; color:#766;}
 
     /* Footer */
@@ -128,39 +111,15 @@
         <h1 class="title"><span class="names">Prince</span> <span class="and">💍</span> <span class="names">Rashmi</span></h1>
         <p class="subtitle">Join us as we celebrate the beginning of forever.<br/>30th October 2025 | Hotel Blue Sivalik, Ranchi</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#rsvp">RSVP Now</a>
           <a class="btn btn-ghost" href="#save">Save the Date</a>
-          <button class="btn btn-ghost" id="musicToggle" type="button" aria-pressed="false">Play Music</button>
         </div>
         <div class="hero-card reveal">
           <div class="date">🗓️ Thursday, 30 October 2025</div>
           <div>📍 Venue: Hotel Blue Sivalik, Near Ranchi Railway Station, 834001</div>
-          <div>⏰ Time: 6:30 PM onwards <!-- Edit if needed --> </div>
+          <div>⏰ Time: 2:00 PM onwards <!-- Edit if needed --> </div>
           <div class="countdown" id="countdown" aria-label="Countdown to event"></div>
         </div>
       </div>
-      <div class="hero-figure reveal">
-        <img alt="Prince & Rashmi" src="https://images.unsplash.com/photo-1530023367847-a683933f4175?q=80&w=1400&auto=format&fit=crop"/>
-        <svg class="flourish tl" viewBox="0 0 100 100" aria-hidden="true">
-          <path d="M5,90 C40,70 30,40 70,20" fill="none" stroke="url(#gold)" stroke-width="2"/>
-          <defs>
-            <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1">
-              <stop offset="0%" stop-color="#a67c00"/>
-              <stop offset="60%" stop-color="#d4af37"/>
-              <stop offset="100%" stop-color="#b7962f"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <svg class="flourish br" viewBox="0 0 100 100" aria-hidden="true">
-          <path d="M5,90 C40,70 30,40 70,20" fill="none" stroke="url(#gold2)" stroke-width="2"/>
-          <defs>
-            <linearGradient id="gold2" x1="0" x2="0" y1="0" y2="1">
-              <stop offset="0%" stop-color="#a67c00"/>
-              <stop offset="60%" stop-color="#d4af37"/>
-              <stop offset="100%" stop-color="#b7962f"/>
-            </linearGradient>
-          </defs>
-        </svg>
       </div>
     </div>
   </header>
@@ -177,7 +136,7 @@
           </p>
         </div>
         <div class="reveal">
-          <img class="hero-figure" alt="Couple photo" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop"/>
+          <img class="hero-figure" alt="Couple photo" src=""/>
         </div>
       </div>
     </section>
@@ -194,7 +153,7 @@
           </div>
           <div class="detail reveal">
             <h4>Time</h4>
-            <p>6:30 PM onwards</p>
+            <p>02.00 PM onwards</p>
           </div>
           <div class="detail reveal">
             <h4>Venue</h4>
@@ -205,76 +164,18 @@
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery">
-      <div class="container">
-        <h2 class="section-title">Photo Gallery</h2>
-        <p class="section-sub">Some of our favorite moments together.</p>
-        <div class="gallery">
-          <img class="g1 reveal" alt="Gallery 1" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1400&auto=format&fit=crop"/>
-          <img class="g2 reveal" alt="Gallery 2" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1400&auto=format&fit=crop"/>
-          <img class="g3 reveal" alt="Gallery 3" src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200&auto=format&fit=crop"/>
-          <img class="g4 reveal" alt="Gallery 4" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"/>
-          <img class="g5 reveal" alt="Gallery 5" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"/>
-        </div>
-      </div>
-    </section>
-
-    <!-- RSVP -->
-    <section id="rsvp">
-      <div class="container">
-        <h2 class="section-title">RSVP</h2>
-        <p class="section-sub">Kindly confirm your presence so we can reserve your seat with love.</p>
-        <div class="card reveal">
-          <!-- By default this form triggers an email with the details. Replace the mailto with your preferred service (Formspree, Google Forms) if needed. -->
-          <form id="rsvpForm">
-            <div class="field">
-              <label for="name">Full Name</label>
-              <input id="name" name="name" required placeholder="Your name" />
-            </div>
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="Your phone" />
-            </div>
-            <div class="field">
-              <label for="attendees">No. of Attendees</label>
-              <select id="attendees" name="attendees">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Leave a note for Prince & Rashmi (optional)"></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Send RSVP</button>
-            <p class="note">Having trouble? Email us at <a href="mailto:prince62yadav@gmail.com?subject=RSVP%20for%20Engagement">prince62yadav@gmail.com</a></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
     <!-- Save the Date / Thank You -->
     <section id="save">
       <div class="container">
         <div class="card reveal" style="text-align:center">
           <h2 class="section-title">Save the Date</h2>
           <p class="section-sub">30th October 2025 • Hotel Blue Sivalik, Ranchi</p>
-          <a class="btn btn-primary" href="#rsvp">RSVP Now</a>
+          <a class="btn btn-primary" href="#rsvp">Prince 💍 Rashmi</a>
           <p style="margin-top:16px">Thank you for being part of our story. Your blessings mean the world to us. 💖</p>
         </div>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div class="container">
-      <p>With love, <strong>Prince & Rashmi</strong></p>
-      <p style="opacity:.7">© 2025 | #PrinceAndRashmi</p>
-    </div>
-  </footer>
 
   <script>
     // Countdown — set to 30 Oct 2025, India time (+05:30)
@@ -305,24 +206,6 @@
     },{threshold: .12});
     document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
 
-    // Music toggle
-    const bgm = document.getElementById('bgm');
-    const toggle = document.getElementById('musicToggle');
-    toggle?.addEventListener('click', async ()=>{
-      try{
-        if (bgm.paused){ await bgm.play(); toggle.textContent='Pause Music'; toggle.setAttribute('aria-pressed','true'); }
-        else { bgm.pause(); toggle.textContent='Play Music'; toggle.setAttribute('aria-pressed','false'); }
-      }catch(err){ alert('Please press once more to allow audio to play.'); }
-    });
-
-    // RSVP mailto fallback
-    document.getElementById('rsvpForm')?.addEventListener('submit', (e)=>{
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(e.target).entries());
-      const subject = encodeURIComponent('RSVP for Prince & Rashmi Engagement');
-      const body = encodeURIComponent(`Name: ${data.name}\nPhone: ${data.phone||''}\nAttendees: ${data.attendees||''}\nMessage: ${data.message||''}`);
-      window.location.href = `mailto:prince62yadav@gmail.com?subject=${subject}&body=${body}`;
-    });
   </script>
 </body>
 </html>
