@@ -124,16 +124,47 @@
       100% { transform: translateY(0px) rotateX(0deg) rotateY(0deg); }
     }
 
-    .countdown {
-		position: fixed;      /* stays even after reload / scroll */
-		  top: 0px;            /* distance from top */
-		  left: 90%;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  gap: 12px;
-		  flex-wrap: wrap;
-    }
+.countdown {
+  position: fixed;       
+  bottom: 10px;          /* stick to bottom */
+  left: 50%;             
+  transform: translateX(-50%);  /* center horizontally */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  padding: 4px 10px;
+  font-size: 14px;       /* smaller size */
+  opacity: 0.6;          /* transparent */
+  
+  background: rgba(0, 0, 0, 0.3);  /* subtle background */
+  border-radius: 8px;
+  backdrop-filter: blur(4px);      
+  
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+/* Hover effect so it can still be read clearly */
+.countdown:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* ✅ Mobile-friendly */
+@media (max-width: 600px) {
+  .countdown {
+    font-size: 12px;
+    padding: 3px 8px;
+    gap: 5px;
+  }
+}
+
+
+
     .cd-item {
       background: rgba(255,255,255,0.1);
       border: 1px solid rgba(255,215,0,0.3);
