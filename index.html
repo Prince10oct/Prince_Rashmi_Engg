@@ -125,10 +125,14 @@
     }
 
     .countdown {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
+		position: fixed;      /* stays even after reload / scroll */
+		  top: 0px;            /* distance from top */
+		  left: 90%;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  gap: 12px;
+		  flex-wrap: wrap;
     }
     .cd-item {
       background: rgba(255,255,255,0.1);
@@ -317,6 +321,13 @@
     from {opacity: 0; transform: translateY(30px);}
     to {opacity: 1; transform: translateY(0);}
   }
+  .contact a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.8), 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
   </style>
 </head>
 <body>
@@ -335,12 +346,14 @@
     <span class="heart" style="left:70%; animation-delay: 6s;">💕</span>
     <span class="heart" style="left:90%; animation-delay: 3s;">💓</span>
   </div>
-
+	<div class="countdown" id="countdown"></div>
+	
   <img src="WhatsApp Image 2025-09-06 at 23.33.37_c87944b2.jpg" alt="Engagement Logo" class="logo">
 
   <h1 class="title">Prince 💍 Rashmi</h1>
   <p class="subtitle">Join us as we celebrate the beginning of forever</p>
 </header>
+
 <!-- 🎉 Welcome Popup + Confetti -->
 <div id="welcomePopup" class="popup">
   <div class="popup-content">
@@ -350,8 +363,6 @@
   </div>
 </div>
 <canvas id="confetti"></canvas>
-
-<div class="countdown" id="countdown"></div>
   
 <div class="card">
   <h2 class="section-title">💌 Save the Date</h2>
