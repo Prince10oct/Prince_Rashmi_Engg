@@ -124,33 +124,6 @@
       100% { transform: translateY(0px) rotateX(0deg) rotateY(0deg); }
     }
 
-    .card {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 40px;
-      border-radius: var(--radius);
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,215,0,0.2);
-      backdrop-filter: blur(10px);
-      box-shadow: var(--shadow-3d);
-      animation: fadeIn 2s ease forwards;
-    }
-
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      margin-bottom: 16px;
-      background: linear-gradient(180deg, var(--soft-gold), var(--gold));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-    }
-    .section-sub {
-      font-size: 18px;
-      color: #f1d5d5;
-      margin-bottom: 24px;
-    }
-
     .countdown {
       display: flex;
       justify-content: center;
@@ -279,6 +252,71 @@
     color: #ff4d6d; /* changes to romantic pink on hover */
     text-shadow: 0 0 15px #ff4d6d, 0 0 30px #ff4d6d;
   }
+    .card {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1.5s ease;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  }
+
+  .section-sub {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .address {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .btn-ghost {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-ghost:hover {
+    background: #ffd700;
+    color: #000;
+    box-shadow: 0 0 15px #ffd700, 0 0 30px #ff4d6d;
+  }
+
+  /* Countdown styling */
+  .countdown {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
   </style>
 </head>
 <body>
@@ -307,18 +345,21 @@
 <div id="welcomePopup" class="popup">
   <div class="popup-content">
     <img src="P&R_photos.jpg" alt="Prince & Rashmi" class="popup-img">
-    <h2>💖 Thanks for visiting our invitation page 💖</h2>
+	<h1> ॐ श्री गणेशाय नमः </h1><br>
+    <h2>💖 Thanks for visiting our invitation page 💖</h2></br>
   </div>
 </div>
 <canvas id="confetti"></canvas>
+
+<div class="countdown" id="countdown"></div>
   
 <div class="card">
-  <h2 class="section-title">Save the Date</h2>
-	<p class="section-sub">30th October 2025 • Hotel Blue Shivalik </p>
-  <br/>Ranchi Railway Station - <br/>834001</p>
-  <p><a class="btn btn-ghost" href="https://www.google.com/maps/dir//Railway+Station,+Ranchi,+near+Bharat+Petroleum+Depot,+Ranchi,+Jharkhand+834011/@23.3518029,85.2554742,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39f4e199b941cc05:0xd7809896b15a9631!2m2!1d85.3378758!2d23.3518245?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Open in Maps</a></p>
-</div>
-  <div class="countdown" id="countdown"></div>
+  <h2 class="section-title">💌 Save the Date</h2>
+  <p class="section-sub">30th October 2025</p>
+  <p class="venue">🏨 Venue: <strong>Hotel Blue Shivalik</strong></p>
+  <p class="address">📍 Ranchi Railway Station<br/>Ranchi, Jharkhand — 834001</p>
+  <a class="btn btn-ghost" href="https://www.google.com/maps/dir//Railway+Station,+Ranchi,+near+Bharat+Petroleum+Depot,+Ranchi,+Jharkhand+834011/@23.3518029,85.2554742,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39f4e199b941cc05:0xd7809896b15a9631!2m2!1d85.3378758!2d23.3518245?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" 
+     target="_blank" rel="noopener">📍 Open in Maps</a>
 </div>
 
 <div class="card">
