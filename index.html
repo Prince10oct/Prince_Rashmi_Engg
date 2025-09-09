@@ -60,8 +60,8 @@
     /* Enhanced Logo (3D Spin + Pulse + Glow) */
     .logo {
       position: absolute;
-      top: -20px;
-      width: 90px;
+      top: 40px;
+      width: 100px;
       transform-style: preserve-3d;
       animation: spinLogo 12s infinite linear, pulseLogo 2.5s infinite ease-in-out;
       box-shadow: 0 0 15px rgba(255, 0, 50, 0.6), 0 0 25px rgba(255, 0, 50, 0.4);
@@ -124,52 +124,20 @@
       100% { transform: translateY(0px) rotateX(0deg) rotateY(0deg); }
     }
 
-.countdown {
-  position: fixed;       
-  bottom: 10px;          /* stick to bottom */
-  left: 50%;             
-  transform: translateX(-50%);  /* center horizontally */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-
-  padding: 4px 10px;
-  font-size: 14px;       /* smaller size */
-  opacity: 0.6;          /* transparent */
-  
-  background: rgba(0, 0, 0, 0.3);  /* subtle background */
-  border-radius: 8px;
-  backdrop-filter: blur(4px);      
-  
-  transition: opacity 0.3s ease;
-  z-index: 9999;
-}
-
-/* Hover effect so it can still be read clearly */
-.countdown:hover {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-/* ✅ Mobile-friendly */
-@media (max-width: 600px) {
-  .countdown {
-    font-size: 12px;
-    padding: 3px 8px;
-    gap: 5px;
-  }
-}
-
-
-
+    .countdown {
+		  top: 10px;            /* distance from top */
+		  left: 50%;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  gap: 12px;
+		  flex-wrap: wrap;
+    }
     .cd-item {
       background: rgba(255,255,255,0.1);
       border: 1px solid rgba(255,215,0,0.3);
       border-radius: 12px;
-      padding: 16px 20px;
+      padding: 10px 14px;
       text-align: center;
       min-width: 80px;
       box-shadow: var(--shadow-3d);
@@ -338,16 +306,6 @@
     box-shadow: 0 0 15px #ffd700, 0 0 30px #ff4d6d;
   }
 
-  /* Countdown styling */
-  .countdown {
-    margin-top: 30px;
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-  }
-
   @keyframes fadeIn {
     from {opacity: 0; transform: translateY(30px);}
     to {opacity: 1; transform: translateY(0);}
@@ -383,6 +341,7 @@
 
   <h1 class="title">Prince 💍 Rashmi</h1>
   <p class="subtitle">Join us as we celebrate the beginning of forever</p>
+  <p class="contact">📞 Contact: <a href="tel:+918962404952">+91 8962404952</a></p>
 </header>
 
 <!-- 🎉 Welcome Popup + Confetti -->
@@ -399,8 +358,9 @@
   <h2 class="section-title">💌 Save the Date</h2>
   <p class="section-sub">30th October 2025</p>
   <p class="venue">🏨 Venue: <strong>Hotel Blue Shivalik</strong></p>
-  <p class="contact">📞 Contact: <a href="tel:+918962404952">+91 89624 04952</a></p>
-  <p class="address">📍 Ranchi Railway Station<br/>Ranchi, Jharkhand — 834001</p>
+  <p class="address">📍Near Bharat Petrol Pump, Ranchi Railway Station — 834001</p>
+
+  
   <a class="btn btn-ghost" href="https://www.google.com/maps/dir//Railway+Station,+Ranchi,+near+Bharat+Petroleum+Depot,+Ranchi,+Jharkhand+834011/@23.3518029,85.2554742,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39f4e199b941cc05:0xd7809896b15a9631!2m2!1d85.3378758!2d23.3518245?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" 
      target="_blank" rel="noopener">📍 Open in Maps</a>
 </div>
